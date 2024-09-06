@@ -29,6 +29,47 @@
                 <section>
                     <h2>Kontakt oss</h2>
                 </section>
+                <section>
+                    <h2>Ta kontakt med oss i dag</h2>
+                    <form method="post" >
+                        <label for="navn">Navn:</label>
+                        <input type="text" name="navn" placeholder="bjørn bjørnesøn.." id="navn" maxlength="45" required>
+                        <label>
+                            E-post:
+                            <input type="email" name="email" placeholder="exsempel@hiof.no" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                        </label>
+                        <label>
+                            Emne:
+                            <input type="text" name="emne" placeholder="Hva handler det om?">
+                        </label>
+                        <label>
+                            Melding:
+                            <textarea name="melding" required></textarea>
+                        </label>
+                        <label>
+                            Nei
+                            <input type="radio" name="valg">
+                        </label>
+                        <label>
+                            Ja
+                            <input type="radio" name="valg">
+                            <label>
+                                kanskje
+                                <input type="radio" name="valg">
+                            </label>
+                        </label>
+                        <input type="submit" value="Send melding">
+
+                        <label>
+                            bra middager
+                            <select name="middager">
+                                <option value="taco">taco</option>
+                                <option value="biff">biff</option>
+                                <option value="italiens pizza">italiens pizza</option>
+                            </select>
+                        </label>
+                    </form>
+                </section>
             </main>
         <footer>2024 Galader</footer>
     </body>
