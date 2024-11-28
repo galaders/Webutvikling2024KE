@@ -1,0 +1,38 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+    padding: 0;
+}
+
+h1{
+    color: #8c001a;
+    font-size: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #fff700;
+    padding: 2rem;
+}
+
+a{
+    text-decoration: none;
+    font-size: 18px;
+}
+
+a.btn{
+    background-color: #ff7f50;
+    color: #8b226d;
+    padding: 2rem;
+    display: inline-block;
+    margin: 10px 5px 5px 5px;
+    /*
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    */
+}
