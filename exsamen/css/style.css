@@ -4,17 +4,31 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 10px;
 }
 
+.opplysninger-knapp{
+    width: 100%;
+}
+
+
 #banner {
-    display: flex; /* Bruker flexbox for å arrangere innholdet i banneret */
-    flex-wrap: wrap; /* Tillater at elementer brytes til neste rad hvis det ikke er plass */
+    display: flex; 
+    flex-wrap: wrap; 
     background-color: gray;
-    justify-content: space-between;
+    justify-content: right;
+    text-align: right;
     img {
-        max-width: 70%; /* Bildet i banneret vil ikke overstige 70% av containerens bredde */
+        max-width: 70%; 
     }
+}
+
+#banner h2,p,button{
+    margin: 10px;
+}
+
+#banner button{
+    padding: 10px;
 }
 
 .banner-button{
@@ -30,6 +44,10 @@
    justify-content: space-evenly;
 
 }
+.banner-button button{
+    border: black 1px solid;
+    padding: 10px;
+}
 
 .populære-produkter{
     background-color: white;
@@ -43,14 +61,14 @@
 
 
 img {
-    width: 100%; /* Bildet tar opp 100% av containerens bredde */
-    max-width: 400px; /* Maks bredde for bilder er satt til 400px */
+    width: 100%; 
+    max-width: 400px;
 }
 
 
 .flex-menu {
    
-    list-style: none; /* Fjerner punktmerking fra meny-elementene */
+    list-style: none;
     margin-bottom: 30px;
     padding: 0;
     margin: 0;
@@ -63,20 +81,20 @@ img {
 
 
 .flex-menu a {
-    text-decoration: none; /* Fjerner understrekningen på lenkene */
-    color: #000; /* Setter fargen på lenkene til svart */
+    text-decoration: none;
+    color: #000;
 }
 
 .flex-space-b {
-    display: flex; /* Bruker flexbox for å arrangere elementene */
-    justify-content: space-between; /* Plasserer elementene med plass mellom seg */
-    flex-wrap: wrap; /* Tillater bryting til neste rad hvis nødvendig */
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap; 
     margin-bottom: 30px;
 }
 
 
 body {
-    font-family: Arial, Helvetica, sans-serif; /* Setter standard fontfamilie til Arial, med fallback til Helvetica og sans-serif for kompatibilitet på tvers av enheter */
+    font-family: Arial, Helvetica, sans-serif; 
 }
 
 .product-card {
@@ -88,6 +106,13 @@ body {
     text-decoration: none;
     color: black;    
 
+}
+
+.product-card a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .anmeldelser-bilde{
@@ -103,9 +128,16 @@ body {
 
 
 .category-card {
-    width: 100%; /* Produktkortet tar opp 100% av sin container */
-    box-shadow: 13px 9px 20px 0px #efefef; /* Legger til en subtil skygge for en 3D-effekt */
-    border-radius: 4px; /* Avrunder hjørnene med en radius på 4px */
+    width: 100%; 
+    box-shadow: 13px 9px 20px 0px #efefef; 
+    border-radius: 4px; 
+}
+
+.product-card h3{
+    border: black 1px solid;
+    padding: 10px;
+    text-align: center;
+    min-height: 50px;
 }
 
 .sosiale h3{
@@ -118,4 +150,63 @@ display: inline;
     flex-wrap: wrap;
     gap: 1rem;
     padding: inherit;
+}
+
+
+#global-footer{
+    border-top: black 1px solid;;
+}
+
+
+#footer-list ul,a{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    padding: 0px;
+}
+
+
+
+#bettaling form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#bettaling form input{
+    width: 100%;
+}
+
+
+#betaling-boks{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#betaling-boks ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#betaling-boks ul li{
+    max-width: 76%;
+}
+
+#opplysninger{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#Levering{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
 }
